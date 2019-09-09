@@ -1,0 +1,32 @@
+<aura:component implements="flexipage:availableForAllPageTypes, force:appHostable" access="global">
+
+    <lightning:layout class="slds-page-header slds-page-header--object-home">
+        <lightning:layoutItem>
+            <lightning:icon iconName="standard:note" alternativeText="Loan Application Form" />
+        </lightning:layoutItem>
+        <lightning:layoutItem padding="horizontal-small">
+            <div class="page-section page-header">
+                <h2 class="slds-text-heading--medium">Loan Application</h2>
+            </div>
+        </lightning:layoutItem>
+    </lightning:layout>
+    <!-- NEW Loan FORM -->
+    <lightning:layout>
+        <lightning:layoutItem padding="around-medium" size="6">
+            <fieldset class="slds-box slds-theme--default slds-container--small">
+                <form class="slds-form-element">
+                    <div class="slds-form-element__control">
+                        <div class="slds-form-element__control">
+                            <h3> Hi El!!</h3>
+                                <label class="slds-form-element__label" for="Salary"> Your Salary is: </label>
+            
+                                <label class="slds-form-element__label" for="Credit Score"> Your Credit Score is: </label>
+                        </div>
+                        <c:LoanApplicationForm />
+                    </div>
+                </form>
+            </fieldset>
+        </lightning:layoutItem>
+    </lightning:layout>
+    <c:loansList loans="{!v.loans}" />
+</aura:component>

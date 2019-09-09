@@ -28,5 +28,5 @@
             </fieldset>
         </lightning:layoutItem>
     </lightning:layout>
-    <c:loansList loans="{!v.loans}" />
+    <c:LoanList loans="{!v.loans}" />
 </aura:component>

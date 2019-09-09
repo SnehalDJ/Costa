@@ -9,7 +9,8 @@
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <label>Costa</label>
     <navType>Standard</navType>
-    <tabs>Apply_for_Loan</tabs>
+    <tabs>Loan_Application_Form</tabs>
+    <tabs>standard-ProcessInstanceWorkitem</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Costa_UtilityBar</utilityBar>
 </CustomApplication>

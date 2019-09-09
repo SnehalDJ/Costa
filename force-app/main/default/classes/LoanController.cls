@@ -1,5 +1,6 @@
 public with sharing class LoanController {
-    @AuraEnabled
+    
+@AuraEnabled
 public static List<Loan__c> getLoans(){
 //     String[] fieldsToCheck = new String[] {
 //     'LoanId__c', 'Amount__c', 'Repayment_Period_Months__c', 'Status__c'
@@ -12,7 +13,7 @@ public static List<Loan__c> getLoans(){
 //         throw new System.NoAccessException();
 //     }
 // }
-return [SELECT LoanId__c, Amount__c, Repayment_Period_Months__c, Status__c
+return [SELECT LoanId__c, Name, Amount__c, Repayment_Period_Months__c, Status__c
 		FROM Loan__c];
 }
 

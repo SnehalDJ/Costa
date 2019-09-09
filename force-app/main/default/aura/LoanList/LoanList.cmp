@@ -1,6 +1,6 @@
 <aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
     <aura:attribute name="loans" type="Loan__c[]" />
-    <lightning:card title="Loans" />
+    <lightning:card title="Loan Applications" />
     <p class="slds-p-horizantal--small">
         <aura:iteration items="{!v.loans}" var="loan">
             <c:LoanItem loan ="{!loan}" />                                 

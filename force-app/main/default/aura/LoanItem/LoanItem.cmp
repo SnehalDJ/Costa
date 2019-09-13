@@ -15,8 +15,8 @@
         Amount:
         <lightning:formattedNumber value="{!v.loan.Amount__c}"/>
     </p>
- <p class="slds-p-horizontal--small">
-        Loan PEriod: {!v.loan.Repayment_Period_Months__c}
+    <p class="slds-p-horizontal--small">
+        Loan Period: {!v.loan.Repayment_Period_Months__c}
     </p>
     </lightning:card>
 </aura:component>

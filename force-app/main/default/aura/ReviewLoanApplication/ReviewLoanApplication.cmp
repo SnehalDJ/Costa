@@ -1,0 +1,21 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId, force:appHostable" access="global"
+controller="ReviewLoanController" >
+        <aura:attribute name="referredLoans" type="Loan__c[]"/>
+        <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+
+        <lightning:layout class="slds-page-header slds-page-header--object-home">
+        <lightning:layoutItem>
+            <lightning:icon iconName="standard:scan_card" alternativeText="Referred Loan Applications"/>
+        </lightning:layoutItem>
+        <lightning:layoutItem padding="horizontal-small">
+            <div class="page-section page-header">
+                <h2 class="slds-text-heading--medium">Referred Applications</h2>
+            </div>
+        </lightning:layoutItem>
+    </lightning:layout>
+    <lightning:layout>
+		<lightning:layoutItem padding="around-small" size="4">
+							<c:LoanList loans="{!v.referredLoans}" />
+		</lightning:layoutItem>
+	</lightning:layout>
+</aura:component>

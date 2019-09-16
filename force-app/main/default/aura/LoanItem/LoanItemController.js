@@ -1,5 +1,5 @@
 ({
 	doInit : function(component, event, helper) {
-		 var mydate = component.get("v.loan.");
+		 console.log("Am I used");
 	}
 })

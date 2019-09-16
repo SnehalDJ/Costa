@@ -6,27 +6,23 @@
         </lightning:layoutItem>
         <lightning:layoutItem padding="horizontal-small">
             <div class="page-section page-header">
-                <h2 class="slds-text-heading--medium">Loan Application</h2>
+                <h2 class="slds-text-heading--medium">Your Loan Application</h2>
             </div>
         </lightning:layoutItem>
     </lightning:layout>
     <!-- NEW Loan FORM -->
     <lightning:layout>
-        <lightning:layoutItem padding="around-medium" size="6">
-            <fieldset class="slds-box slds-theme--default slds-container--small">
-                <form class="slds-form-element">
-                    <div class="slds-form-element__control">
-                        <div class="slds-form-element__control">
-                            <h3> Hi El!!</h3>
-                                <label class="slds-form-element__label" for="Salary"> Your Salary is: </label>
-            
-                                <label class="slds-form-element__label" for="Credit Score"> Your Credit Score is: </label>
-                        </div>
-                        <c:LoanApplicationForm />
-                    </div>
-                </form>
+        <lightning:layoutItem padding="around-medium" size="4">
+            <fieldset class="slds-box slds-theme--default slds-container--medium">
+
+                <h3> Hi El!!</h3>
+                <label class="slds-form-element__label" for="Salary"> Your Salary is: </label>
+
+                <label class="slds-form-element__label" for="Credit Score"> Your Credit Score is: </label>
+
             </fieldset>
+
         </lightning:layoutItem>
     </lightning:layout>
-    <c:LoanList loans="{!v.loans}" />
+    <c:LoanApplicationForm />
 </aura:component>

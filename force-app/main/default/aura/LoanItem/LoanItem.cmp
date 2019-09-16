@@ -1,22 +1,17 @@
-<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+<aura:component>
     <!-- <aura:handler name="init" value="{!this}" action="{!c.doInit}" /> -->
 
     <aura:attribute name="loan" type="Loan__c" />
-    
-    <lightning:card title="{!v.loan.Name}" iconName="standard:scan_card" class="slds-theme--success">
-        <aura:set attribute="footer">
-            <p>Status: {!v.loan.Status__c}
-        </p>
-        <p class="slds-text-title">
-            <lightning:relativeDateTime vlaue="{!v.formatdate}" />
-        </p>
-        </aura:set>
-        <p class="slds-test-heading-medium slds-p-horizantal--small">
-        Amount:
-        <lightning:formattedNumber value="{!v.loan.Amount__c}"/>
-    </p>
-    <p class="slds-p-horizontal--small">
-        Loan Period: {!v.loan.Repayment_Period_Months__c}
-    </p>
+
+    <lightning:card title="{!v.loan.Name}" iconName="standard:scan_card" class="slds-card_boundary">
+        <div class="slds-card__body_inner">
+            <p>Status: {!v.loan.Status__c}</p>
+            <p>
+                Amount: £<lightning:formattedNumber value="{!v.loan.Amount__c}" />
+            </p>
+            <p>
+                Loan Period: {!v.loan.Repayment_Period_Months__c} Months
+            </p>
+        </div>
     </lightning:card>
 </aura:component>

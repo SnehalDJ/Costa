@@ -10,7 +10,7 @@
     <label>Costa</label>
     <navType>Standard</navType>
     <tabs>Loan_Application_Form</tabs>
-    <tabs>standard-ProcessInstanceWorkitem</tabs>
+    <tabs>Review_Loan_Applications</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Costa_UtilityBar</utilityBar>
 </CustomApplication>

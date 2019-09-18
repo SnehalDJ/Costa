@@ -1,5 +1,5 @@
 <aura:component implements="flexipage:availableForRecordHome,force:hasRecordId, force:appHostable" access="global"
-controller="ReviewLoanController" >
+    controller="ReferredLoanController" >
         <aura:attribute name="referredLoans" type="Loan__c[]"/>
         <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
 
@@ -15,7 +15,7 @@ controller="ReviewLoanController" >
     </lightning:layout>
     <lightning:layout>
 		<lightning:layoutItem padding="around-small" size="4">
-							<c:LoanList loans="{!v.referredLoans}" />
+							<c:ReferredLoanList referredLoans="{!v.referredLoans}" />
 		</lightning:layoutItem>
 	</lightning:layout>
 </aura:component>

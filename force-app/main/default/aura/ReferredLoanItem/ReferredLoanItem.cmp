@@ -1,0 +1,25 @@
+<aura:component >
+    <aura:attribute name="referredLoan" type="Loan__c"/>
+    <aura:attribute name="employee" type="Loan__c"/>
+
+    <lightning:card title=" Please review" iconName="standard:scan_card">
+        <p class="slds-text-heading--medium slds-p-horizontal--small">
+           Applicant: {!v.referredLoan.Name}
+        </p>
+        <p class="slds-text-heading--medium slds-p-horizontal--small">
+           Salary: <lightning:formattedNumber value="{!v.employee.Salary__c}" style="currency"/>
+        </p>
+        <p class="slds-text-heading--medium slds-p-horizontal--small">
+           Loan Amount: <lightning:formattedNumber value="{!v.referredLoan.Loan_Amount__c}" style="currency"/>
+        </p>
+        <p class="slds-text-heading--medium slds-p-horizontal--small">
+           Loan period : {!v.referredLoan.Loan_Period__c} Months
+        </p>
+        <p class="slds-text-heading--medium slds-p-horizontal--small">
+           Credit Rating: {!v.employee.Credit_Score__c}
+        </p>
+        <p class="slds-text-heading--medium slds-p-horizontal--small">
+           Status: {!v.referredLoan.Status__c}
+        </p>
+        </lightning:card>
+</aura:component>

@@ -1,4 +1,4 @@
-public with sharing class ReviewLoanController {
+public with sharing class ReferredLoanController {
 
     @AuraEnabled
 public static List<Loan__c> getLoans(){

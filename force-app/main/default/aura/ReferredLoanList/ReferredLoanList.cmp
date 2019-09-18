@@ -1,0 +1,18 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId, force:appHostable" access="global"
+    controller="ReferredLoanController" >
+
+    <aura:attribute name="referredLoans" type="Loan__c[]"/>
+                
+        <!-- <aura:handler name="updateApplication" event="c:applicationsItemUpdate"
+                    action="{!c.handleUpdateApplication}"/>
+        <aura:handler name="getRating" event="c:applicationsItemUpdate"
+                    action="{!c.handleGetRating}"/> -->
+                
+                <lightning:card title="Loan Applications">
+                    <p class="slds-p-horizontal--small">
+                        <aura:iteration items="{!v.referredLoans}" var="referredLoan">
+                            <c:ReferredLoanItem referredLoan="{!referredLoan}"/>
+                        </aura:iteration>
+                    </p>
+                </lightning:card>
+</aura:component>

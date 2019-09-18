@@ -5,7 +5,7 @@
 		action.setCallback(this, function(response){
 			var state = response.getState();
 			if(state === "SUCCESS") {
-				component.set("v.loans", response.getReturnValue());
+				component.set("v.referredLoans", response.getReturnValue());
 			}else {
 				console.log("Falied with state: "+state);
 			}

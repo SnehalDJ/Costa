@@ -15,8 +15,8 @@ public static List<Loan__c> getLoans(){
 // }
 System.debug('Retrieving loans..');
 return [SELECT LoanId__c, Name, Amount__c, Repayment_Period_Months__c, Status__c
-		FROM Loan__c];
-        // WHERE Status__c='Referred'
+		FROM Loan__c
+        WHERE Status__c= 'Referred' ];
 }
 
 // @AuraEnabled

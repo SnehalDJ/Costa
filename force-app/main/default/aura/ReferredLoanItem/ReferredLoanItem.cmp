@@ -1,16 +1,31 @@
-<aura:component >
-    <aura:attribute name="referredLoan" type="Loan__c"/>
-
-    <lightning:card title=" Please review" iconName="standard:scan_card">
+   <aura:component >
+      <aura:attribute name="referredLoan" type="Loan__c"/>
+      <lightning:card title=" Please review" iconName="standard:scan_card">
          <p class="slds-text-heading--medium slds-p-horizontal--small">
-               Status: {!v.referredLoan.Status__c}
-            </p>
-        <p class="slds-text-heading--medium slds-p-horizontal--small">
-          Amount: £ <lightning:formattedNumber value="{!v.referredLoan.Amount__c}" />
-        </p>
-        <p class="slds-text-heading--medium slds-p-horizontal--small">
-           Loan period : {!v.referredLoan.Repayment_Period_Months__c} Months
-        </p>
-        
-        </lightning:card>
-</aura:component>
+                  Status: {!v.referredLoan.Status__c}
+               </p>
+         <p class="slds-text-heading--medium slds-p-horizontal--small">
+            Amount: £ <lightning:formattedNumber value="{!v.referredLoan.Amount__c}" />
+         </p>
+         <p class="slds-text-heading--medium slds-p-horizontal--small">
+            Loan period : {!v.referredLoan.Repayment_Period_Months__c} Months
+         </p>
+         
+         <aura:if isTrue="{!v.referredLoan.Status__c == 'Referred'}">
+               <p>
+               <lightning:button label="Get Credit Score" 
+                                 class="slds-m-top--medium"
+                                 variant="brand"
+                                 onclick="{!c.getCreditScore}"/>
+               <lightning:button label="Approve" 
+                                 class="slds-m-top--medium"
+                                 variant="brand"
+                                 onclick="{!c.approvalHandler}"/>
+               <lightning:button label="Reject"
+                                 class="slds-m-top--medium"
+                                 variant="brand"
+                                 onclick="{!c.rejectionHandler}"/>     
+               </p>   
+         </aura:if>
+         </lightning:card>
+   </aura:component>

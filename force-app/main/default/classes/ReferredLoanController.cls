@@ -26,7 +26,7 @@ return [SELECT LoanId__c, Name, Amount__c, Repayment_Period_Months__c, Status__c
 //     System.debug(lendedMoney);
 
 //     for(int i: lendedMoney){
-//         int total = 
+//         int total =  +i;
 //     }
 // }
 }

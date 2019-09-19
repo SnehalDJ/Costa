@@ -1,13 +1,10 @@
-<aura:component >
-
-    <aura:attribute name="referredLoans" type="Loan__c[]"/>
-                
-                <lightning:card title=" Referred Loan Applications">
-                    <p class="slds-p-horizontal--small">
-                        <aura:iteration items="{!v.referredLoans}" var="referredLoan">
-                            <c:ReferredLoanItem referredLoan="{!referredLoan}"/>
-                            <h2>Iterating</h2>
-                        </aura:iteration>
-                    </p>
-                </lightning:card>
-</aura:component>
+    <aura:component >
+        <aura:attribute name="referredLoans" type="Loan__c[]"/>
+            <lightning:card title=" Referred Loan Applications">
+                <p class="slds-p-horizontal--small">
+                    <aura:iteration items="{!v.referredLoans}" var="referredLoan">
+                        <c:ReferredLoanItem referredLoan="{!referredLoan}"/>
+                    </aura:iteration>
+                </p>
+            </lightning:card>
+    </aura:component>

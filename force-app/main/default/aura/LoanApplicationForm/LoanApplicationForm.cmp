@@ -2,11 +2,11 @@
 	controller="LoanController">
 	<aura:attribute name="loans" type="Loan__c[]" />
 	<aura:attribute name="newLoan" type="Loan__c" default="{
-	'sobjectType': 'Loan__c',
-	'Amount__c' : 0,
-	'Repayment_Period_Months__c':0,
-	'Status__c' :'Submitted'
-}" />
+		'sobjectType': 'Loan__c',
+		'Amount__c' : 0,
+		'Repayment_Period_Months__c':0,
+		'Status__c' :'Submitted'
+	}" />
 
 	<aura:handler name="init" action="{!c.doInit}" value="{!this}" />
 	<lightning:layout>
@@ -17,7 +17,6 @@
 						<div class="slds-form-element__control">
 							<lightning:input type="text" aura:id="loanform" name="Name" label="Loan Name"
 								value="{!v.newLoan.Name}" required="true" />
-
 							<lightning:input type="number" aura:id="loanform" name="Amount"
 								label="Amount of loan needed" value="{!v.newLoan.Amount__c}" min="1000" max="5000"
 								formatter="currency" required="true" />
@@ -26,20 +25,21 @@
 								max="12" required="true" />
 							<lightning:input type="text" aura:id="loanform" name="Status" label="Loan Status"
 								value="{!v.newLoan.Status__c}" required="true" />
-
-							<lightning:button variant="brand" label="Give me the money" title="Submit"
-								onclick="{!c.clickCreateLoan}" />
-							<lightning:button variant="brand" label="Ahh..Nevermind" title="Cancel"
-								onclick="{!c.clickClearLoan}" />
-								</div>
-								</div>
-								</form>
+							<p>
+								<lightning:button variant="brand" label="Give me the money" title="Submit"
+									onclick="{!c.clickCreateLoan}" />
+								<lightning:button variant="brand" label="Ahh..Nevermind" title="Cancel"
+									onclick="{!c.clickClearLoan}" />
+							</p>
+						</div>
+					</div>
+				</form>
 			</fieldset>
 		</lightning:layoutItem>
 	</lightning:layout>
 	<lightning:layout>
 		<lightning:layoutItem padding="around-small" size="4">
-							<c:LoanList loans="{!v.loans}" />
+			<c:LoanList loans="{!v.loans}" />
 		</lightning:layoutItem>
 	</lightning:layout>
 </aura:component>

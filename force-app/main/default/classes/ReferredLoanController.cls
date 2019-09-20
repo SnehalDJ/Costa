@@ -3,7 +3,7 @@ public with sharing class ReferredLoanController {
     @AuraEnabled
 public static List<Loan__c> getLoans(){
 //     String[] fieldsToCheck = new String[] {
-//     'LoanId__c', 'Amount__c', 'Repayment_Period_Months__c', 'Status__c'
+//     'LoanId__c', Name, 'Amount__c', 'Repayment_Period_Months__c', 'Status__c'
 // };
 
 // Map<String, Schema.SObjectField> fieldDescribeTokens = Schema.SObjectType.Loan__c.fields.getMap();
@@ -28,5 +28,15 @@ return [SELECT LoanId__c, Name, Amount__c, Repayment_Period_Months__c, Status__c
 //     for(int i: lendedMoney){
 //         int total =  +i;
 //     }
+//     System.debug(total);
+//     return total;
 // }
+
+@AuraEnabled
+public static Loan__c updateLoan(Loan__c loan){
+    upsert loan;
+     System.debug('upserting via reviewer');
+    System.debug(loan);
+    return loan;
+}
 }

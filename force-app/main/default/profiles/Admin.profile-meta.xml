@@ -10,7 +10,7 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>ReviewLoanController</apexClass>
+        <apexClass>ReferredLoanController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <custom>false</custom>

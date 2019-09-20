@@ -1,6 +1,6 @@
 <aura:component >
     <aura:attribute name="loans" type="Loan__c[]" />
-    <lightning:card title="Your Loan Applications" >
+    <lightning:card title="Your Loans" >
     <p class="slds-p-horizantal--small">
         <aura:iteration items="{!v.loans}" var="loan">
             <c:LoanItem loan ="{!loan}" />                                 

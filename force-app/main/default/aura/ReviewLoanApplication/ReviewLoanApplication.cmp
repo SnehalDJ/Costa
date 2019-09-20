@@ -1,7 +1,9 @@
-<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId, force:appHostable" access="global"
+<aura:component implements="force:appHostable" access="global"
     controller="ReferredLoanController" >
         <aura:attribute name="referredLoans" type="Loan__c[]"/>
         <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+        <aura:handler name="updateExpense" event="c:loanItemUpdate"
+        action="{!c.handleUpdateLoan}"/>
 
         <lightning:layout class="slds-page-header slds-page-header--object-home">
         <lightning:layoutItem>

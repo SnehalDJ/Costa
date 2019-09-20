@@ -26,9 +26,9 @@
 							<lightning:input type="text" aura:id="loanform" name="Status" label="Loan Status"
 								value="{!v.newLoan.Status__c}" required="true" />
 							<p>
-								<lightning:button variant="brand" label="Give me the money" title="Submit"
+								<lightning:button variant="success" label="Give me the money" title="Submit"
 									onclick="{!c.clickCreateLoan}" />
-								<lightning:button variant="brand" label="Ahh..Nevermind" title="Cancel"
+								<lightning:button variant="destructive" label="Ahh..Nevermind" title="Cancel"
 									onclick="{!c.clickClearLoan}" />
 							</p>
 						</div>

@@ -12,8 +12,9 @@
         var loan = component.get("v.referredLoan");
         component.set("v.referredLoan.Status__c", "Approved");
         var updateEvent = component.getEvent("updateLoan");
-        loan.Status__c='Approved';
-        updateEvent.setParams({ "loan": loan });
+        loan.Status__c ='Approved';
+		updateEvent.setParams({ "loan": loan });
+		console.log(JSON.stringify(loan));
         updateEvent.fire();
 	},
 	
@@ -22,8 +23,9 @@
 		var loan = component.get("v.referredLoan");
         component.set("v.referredLoan.Status__c", "Rejected");
         var updateEvent = component.getEvent("updateLoan");
-        loan.Status__c='Rejected';
-        updateEvent.setParams({ "loan": loan });
+		loan.Status__c ='Rejected';
+		console.log(JSON.stringify(loan));
+		updateEvent.setParams({ "loan": loan });
         updateEvent.fire();
 	},
 

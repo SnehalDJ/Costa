@@ -12,4 +12,9 @@
 		});
 		$A.enqueueAction(action);
 	},
+
+	handleUpdateLoan: function(component, event, helper) {
+			var updatedLoan = event.getParam("loan");
+			helper.createLoan(component, updatedLoan);
+	}
 })

@@ -9,6 +9,8 @@
 	}" />
 
 	<aura:handler name="init" action="{!c.doInit}" value="{!this}" />
+	<aura:registerEvent name="createLoan" type="c:loanItemUpdate"/>
+
 	<lightning:layout>
 		<lightning:layoutItem padding="around-medium" size="4">
 			<fieldset class="slds-box slds-theme--default slds-container--medium">

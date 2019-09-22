@@ -1,6 +1,6 @@
    <aura:component >
       <aura:attribute name="referredLoan" type="Loan__c"/>
-       <aura:registerEvent name="updateLoanAmend" type="c:loanItemUpdate"/>
+       <aura:registerEvent name="updateLoan" type="c:loanItemUpdate"/>
       <!--<aura:registerEvent name="getCredit" type="c:"/> -->
   
       <lightning:card title=" Please review" iconName="standard:scan_card">

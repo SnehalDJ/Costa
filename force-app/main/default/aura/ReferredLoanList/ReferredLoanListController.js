@@ -1,6 +1,8 @@
 ({
-	handleLoanAmend : function(component, event, helper) {
-		var updateLoanItem = event.getParam("loan");
-		helper.updateLoanItem(component, updateLoanItem);
+	handleUpdateLoan : function(component, event, helper) {
+		var updatedLoan = event.getParam("loan");
+		console.log("handling update in list");
+		console.log(JSON.stringify(updatedLoan));
+		helper.updateLoan(component, updatedLoan);
 	}
 })

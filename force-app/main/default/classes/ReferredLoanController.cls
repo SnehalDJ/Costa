@@ -35,7 +35,7 @@ return [SELECT LoanId__c, Name, Amount__c, Repayment_Period_Months__c, Status__c
 @AuraEnabled
 public static Loan__c updateLoan(Loan__c loan){
     upsert loan;
-     System.debug('upserting via reviewer');
+    System.debug('upserting via reviewer');
     System.debug(loan);
     return loan;
 }

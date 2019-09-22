@@ -2,7 +2,7 @@
     controller="ReferredLoanController" >
         <aura:attribute name="referredLoans" type="Loan__c[]"/>
         <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
-        <aura:handler name="updateExpense" event="c:loanItemUpdate"
+        <aura:handler name="updateLoanAmend" event="c:loanItemUpdate"
         action="{!c.handleUpdateLoan}"/>
 
         <lightning:layout class="slds-page-header slds-page-header--object-home">

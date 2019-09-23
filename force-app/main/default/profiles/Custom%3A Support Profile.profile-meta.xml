@@ -9,6 +9,10 @@
         <apexClass>LoanController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>ReferredLoanController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
     <custom>true</custom>
     <fieldPermissions>
         <editable>true</editable>
@@ -36,6 +40,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Loan__c.Credit_Score__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Loan__c.LoanId__c</field>
         <readable>true</readable>
@@ -43,6 +52,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Loan__c.Repayment_Period_Months__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Loan__c.Salary__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

@@ -1,6 +1,6 @@
 public with sharing class ReferredLoanController {
 
-    @AuraEnabled
+@AuraEnabled
 public static List<Loan__c> getLoans(){
 //     String[] fieldsToCheck = new String[] {
 //     'LoanId__c', Name, 'Amount__c', 'Repayment_Period_Months__c', 'Status__c'
@@ -19,19 +19,6 @@ return [SELECT LoanId__c, Name, Amount__c, Repayment_Period_Months__c, Status__c
         WHERE Status__c= 'Referred' ];
 }
 
-// @AuraEnabled
-// public static int getTotalamount(){
-//     int[] lendedMoney = [SELECT Amount__c FROM Loan__c];
-
-//     System.debug(lendedMoney);
-
-//     for(int i: lendedMoney){
-//         int total =  +i;
-//     }
-//     System.debug(total);
-//     return total;
-// }
-
 @AuraEnabled
 public static Loan__c updateLoan(Loan__c loan){
     upsert loan;
@@ -39,4 +26,8 @@ public static Loan__c updateLoan(Loan__c loan){
     System.debug(loan);
     return loan;
 }
+// @AuraEnabled
+// public static string getCredit(){
+    
+// }
 }

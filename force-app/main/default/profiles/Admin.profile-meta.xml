@@ -40,6 +40,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Loan__c.Credit_Score__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Loan__c.LoanId__c</field>
         <readable>true</readable>
@@ -47,6 +52,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Loan__c.Repayment_Period_Months__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Loan__c.Salary__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

@@ -1,7 +1,9 @@
     <aura:component implements="force:appHostable" controller="ReferredLoanController">
+
         <aura:attribute name="referredLoans" type="Loan__c[]"/>
-        <aura:handler name="updateLoan" event="c:loanItemUpdate"
-        action="{!c.handleUpdateLoan}"/>
+        <aura:handler name="updateLoan" event="c:loanItemUpdate" action="{!c.handleUpdateLoan}"/>
+        <aura:handler name="getCredit" event="c:loanItemUpdate" action="{!c.handleGetCredit}"/>
+
             <lightning:card title=" Referred Loan Applications">
                 <p class="slds-p-horizontal--small">
                     <aura:iteration items="{!v.referredLoans}" var="referredLoan">

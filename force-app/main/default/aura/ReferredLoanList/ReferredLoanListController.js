@@ -7,6 +7,7 @@
 	},
 
 	handleGetCredit : function(component, event, helper) {
+		console.log("handling credit in list");
 		helper.getCreditScore(component, event.getParam("loan"));
 	}
 })

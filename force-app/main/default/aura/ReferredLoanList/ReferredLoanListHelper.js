@@ -19,7 +19,7 @@
 		action.setParams({
 			"loan" : loan
 		});
-
+		console.log("handling credit in helper");
 		action.setCallback(this, function(response){
 			var state = response.getState();
 			if (state === "SUCCESS") {

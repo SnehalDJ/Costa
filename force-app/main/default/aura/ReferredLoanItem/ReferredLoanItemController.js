@@ -1,6 +1,6 @@
 ({
 	getCreditScore : function(component, event, helper) {
-		
+		console.log("trying to get credit");
 		var loan = component.get("v.referredLoan");
 		var getCreditEvent = component.getEvent("getCredit");
 		getCreditEvent.setParams({ "loan": loan });

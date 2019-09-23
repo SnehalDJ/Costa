@@ -1,6 +1,7 @@
    <aura:component >
       <aura:attribute name="referredLoan" type="Loan__c"/>
        <aura:registerEvent name="updateLoan" type="c:loanItemUpdate"/>
+       <aura:registerEvent name="getCredit" type="c:loanItemUpdate"/>
   
       <lightning:card title=" Please review" iconName="standard:scan_card">
          <p class="slds-text-heading--medium slds-p-horizontal--small">
@@ -15,8 +16,14 @@
          
          <aura:if isTrue="{!v.referredLoan.Status__c == 'Referred'}">
                <p>
+                  <span class="slds-text-heading--medium slds-p-horizontal--small">   Credit Score:  {!v.referredLoan.Credit_Score__c}
+                  </span>
+               <span>
                <lightning:button label="Get Credit Score" class="slds-m-top--medium" variant="brand"
                                  onclick="{!c.getCreditScore}"/>
+                              </span>
+               </p>
+               <p>
                <lightning:button label="Approve" class="slds-m-top--medium" variant="success"
                                  onclick="{!c.approvalHandler}"/>
                <lightning:button label="Reject" class="slds-m-top--medium" variant="destructive"

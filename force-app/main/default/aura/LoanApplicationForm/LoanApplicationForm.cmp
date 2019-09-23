@@ -25,14 +25,16 @@
 							<lightning:input type="number" aura:id="loanform" name="Repayment Period"
 								label="Repayment Period" value="{!v.newLoan.Repayment_Period_Months__c}" min="6"
 								max="12" required="true" />
-							<lightning:input type="text" aura:id="loanform" name="Status" label="Loan Status"
-								value="{!v.newLoan.Status__c}" required="true" />
+							<lightning:input type="text" aura:id="loanform" name="Salary" label="Your Salary"
+								value="{!v.newLoan.Salary__c}" required="true" />
+						<div>
 							<p>
 								<lightning:button variant="success" label="Give me the money" title="Submit"
 									onclick="{!c.clickCreateLoan}" />
 								<lightning:button variant="destructive" label="Ahh..Nevermind" title="Cancel"
 									onclick="{!c.clickClearLoan}" />
 							</p>
+						</div>
 						</div>
 					</div>
 				</form>

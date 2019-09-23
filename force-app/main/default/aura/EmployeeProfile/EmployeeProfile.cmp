@@ -16,10 +16,7 @@
             <fieldset class="slds-box slds-theme--default slds-container--medium">
 
                 <h3> Hi El!!</h3>
-                <label class="slds-form-element__label" for="Salary"> Your Salary is: </label>
-
-                <label class="slds-form-element__label" for="Credit Score"> Your Credit Score is: </label>
-
+                
             </fieldset>
 
         </lightning:layoutItem>

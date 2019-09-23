@@ -6,5 +6,5 @@
             <c:LoanItem loan ="{!loan}" />                                 
         </aura:iteration>
     </p>
-</lightning:card>
+    </lightning:card>
 </aura:component>

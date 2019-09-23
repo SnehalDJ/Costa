@@ -1,16 +1,14 @@
 <aura:component>
 
-    <aura:attribute name="loan" type="Loan__c" />
+    <aura:attribute name="loan" type="Loan__c"/>
 
     <lightning:card title="{!v.loan.Name}" iconName="standard:scan_card" class="slds-card_boundary">
         <div class="slds-card__body_inner">
             <p>Status: {!v.loan.Status__c}</p>
-            <p>
-                Amount: £<lightning:formattedNumber value="{!v.loan.Amount__c}" />
+            <p> Amount: £ <lightning:formattedNumber value="{!v.loan.Amount__c}"/>
             </p>
-            <p>
-                Loan Period: {!v.loan.Repayment_Period_Months__c} Months
-            </p>
+            <p> Loan Period: {!v.loan.Repayment_Period_Months__c} Months </p>
         </div>
     </lightning:card>
+    
 </aura:component>

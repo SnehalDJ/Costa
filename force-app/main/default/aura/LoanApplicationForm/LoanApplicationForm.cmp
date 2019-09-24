@@ -29,9 +29,9 @@
 								value="{!v.newLoan.Salary__c}" required="true" />
 						<div>
 							<p>
-								<lightning:button variant="success" label="Give me the money" title="Submit"
+								<lightning:button variant="success" label="Submit" title="Submit"
 									onclick="{!c.clickCreateLoan}" />
-								<lightning:button variant="destructive" label="Ahh..Nevermind" title="Cancel"
+								<lightning:button variant="destructive" label="Cancel" title="Cancel"
 									onclick="{!c.clickClearLoan}" />
 							</p>
 						</div>

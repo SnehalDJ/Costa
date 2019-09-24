@@ -6,7 +6,7 @@
         </lightning:layoutItem>
         <lightning:layoutItem padding="horizontal-small">
             <div class="page-section page-header">
-                <h2 class="slds-text-heading--medium">Your Loan Application</h2>
+                <h2 class="slds-text-heading--medium">Loan Application</h2>
             </div>
         </lightning:layoutItem>
     </lightning:layout>
@@ -15,7 +15,7 @@
         <lightning:layoutItem padding="around-medium" size="4">
             <fieldset class="slds-box slds-theme--default slds-container--medium">
 
-                <h3> Hi El!!</h3>
+                <h3> Hi Please fill in the form below to apply for loan!!</h3>
                 
             </fieldset>
 

@@ -11,6 +11,7 @@
     <navType>Standard</navType>
     <tabs>Loan_Application_Form</tabs>
     <tabs>Review_Loan_Applications</tabs>
+    <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Costa_UtilityBar</utilityBar>

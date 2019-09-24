@@ -26,6 +26,7 @@ public static Loan__c updateLoan(Loan__c loan){
     System.debug(loan);
     return loan;
 }
+
 @AuraEnabled
 public static Loan__c getCredit(Loan__c loan){
     loan.Credit_Score__c = Integer.valueof((Math.random() * 10));
@@ -33,6 +34,5 @@ public static Loan__c getCredit(Loan__c loan){
     System.debug('Upserting after getting credit score');
     System.debug(loan);
     return loan;
-
 }
 }

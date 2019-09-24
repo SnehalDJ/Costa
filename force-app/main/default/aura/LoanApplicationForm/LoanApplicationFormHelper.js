@@ -17,12 +17,6 @@
 			// }
 		});
 		$A.enqueueAction(action);
-	},
-
-	// createLoan: function(component, newLoan) {
-    //     var createEvent = component.getEvent("createLoan");
-    //     createEvent.setParams({ "loan": newLoan });
-    //     createEvent.fire();
-    // }
+	}
 
 })

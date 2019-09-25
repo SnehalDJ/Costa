@@ -71,10 +71,6 @@
         <layout>Loan__c-Loan Layout</layout>
     </layoutAssignments>
     <tabVisibilities>
-        <tab>Apply_for_Loan</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>Loan_Application_Form</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>

@@ -28,7 +28,6 @@
 				for (var i = 0; i < loans.length; i++) {
                     if (loans[i].Id == loan.Id) {
                         loans[i].Credit_Score__c = response.getReturnValue().Credit_Score__c;
-                        break;
                     }
 				}
 				component.set("v.referredLoans", loans); 

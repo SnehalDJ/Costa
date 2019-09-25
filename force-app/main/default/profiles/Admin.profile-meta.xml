@@ -14,10 +14,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>RestLoanController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>TestLoanController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
